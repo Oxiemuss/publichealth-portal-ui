@@ -8,7 +8,13 @@
   "projects": {
     "publichealth-portal-ui": {
       "projectType": "application",
-      "schematics": {},
+      "schematics": {
+        "@schematics/angular:component": {
+          "standalone": true,
+          "skipTests": true,
+          "type": "component"
+  }
+      },
       "root": "",
       "sourceRoot": "src",
       "prefix": "app",
